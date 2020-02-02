@@ -7,6 +7,9 @@ body{
     margin: 0;
     /* background-color: linear-gradient(225deg, #3499FF 0%, #3E8AFC 22%, #6454F0 100%) 0% 0% no-repeat padding-box; */
     background-color: #3499FF;
+    /* background-image: url(assets/landingPage.png);
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 .logo{
