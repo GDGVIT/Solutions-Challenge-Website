@@ -1,21 +1,37 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    /* background-color: linear-gradient(225deg, #3499FF 0%, #3E8AFC 22%, #6454F0 100%) 0% 0% no-repeat padding-box; */
+    background-image: linear-gradient(225deg, #3499FF 0%, #3E8AFC 22%, #6454F0 100%);
     background-color: #3499FF;
-    background-image: url(assets/faq.png);
+    /* background-image: url(assets/faq.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     height: 170vh;
     
 }
 
+.img{
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+}
 
+.mob{
+    display: none;
+}
+
+.img > .web{
+    object-fit: cover;
+    width: 98vw;
+    height: 84vh;
+    overflow: hidden;
+}
 
 .logo{
     max-width: 100vw;
     text-align: center;
-    margin-top: 75px;
+    /* margin-top: 5px; */
+    padding-top: 75px;
 }
 
 .main{
@@ -110,8 +126,17 @@ i{
 }
 
 @media (max-width:1050px){
+    .img > .web{
+        display: none;
+    }
+    .img > .mob{
+        display: block;
+        object-fit: cover;
+        width: 98vw;
+        height: 65vh;
+    }
     body{
-        height: 120vh;
+        height: 130vh;
     }
     .head{
         font-size: 50px;
@@ -135,6 +160,15 @@ i{
 }
 
 @media (max-width:800px){
+    .img > .web{
+        display: none;
+    }
+    .img > .mob{
+        display: block;
+        object-fit: cover;
+        width: 98vw;
+        height: 70vh;
+    }
     body{
         height: 150vh;
     }
@@ -155,6 +189,18 @@ i{
 }
 
 @media (max-width:500px){
+    .img > .web{
+        display: none;
+    }
+    .img > .mob{
+        display: block;
+        object-fit: cover;
+        width: 98vw;
+        height: 90vh;
+    }
+    body{
+        height: 185vh;
+    }
     .text{
         font-size: 18px;
     }
@@ -192,6 +238,9 @@ i{
         margin-left: 10px;
         margin-right: 10px;
     }
+    body{
+        height: 190vh;
+    }   
     .questionStyle{
         font-size: 13px;
     }
@@ -201,6 +250,15 @@ i{
 }
 
 @media (max-width:350px){
+    .img > .web{
+        display: none;
+    }
+    .img > .mob{
+        display: block;
+        object-fit: cover;
+        width: 98vw;
+        height: 100vh;
+    }
     .text{
         font-size: 16px;
     }
@@ -211,9 +269,13 @@ i{
         margin-right: 10px;
     }
     .questionStyle{
-        font-size: 13px;
+        font-size: 11px;
+    }
+
+    body{
+        height: 215vh;
     }
     .answer{
-        font-size: 14px;
+        font-size: 12px;
     }
 }
