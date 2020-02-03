@@ -6,6 +6,7 @@ body{
     background-image: url(assets/faq.png);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 170vh;
     
 }
 
@@ -106,4 +107,113 @@ i{
 
 ::-webkit-scrollbar-thumb{
     background: #3A39A5;
+}
+
+@media (max-width:1050px){
+    body{
+        height: 120vh;
+    }
+    .head{
+        font-size: 50px;
+    }
+    .Faq{
+        /* margin-bottom: 50px; */
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .questionStyle{
+        font-size: 24px;
+    }
+    .answer{
+        font-size: 24px;
+    }
+    button{
+        padding:20px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width:800px){
+    body{
+        height: 150vh;
+    }
+    .head{
+        font-size: 40px;
+    }
+    .Faq{
+        /* margin-bottom: 50px; */
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .questionStyle{
+        font-size: 20px;
+    }
+    .answer{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:500px){
+    .text{
+        font-size: 18px;
+    }
+    .head{
+        font-size: 24px;
+    }
+    .Faq{
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .questionStyle{
+        font-size: 13px;
+    }
+    .answer{
+        font-size: 14px;
+    }
+    button{
+        padding:15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:400px){
+    .text{
+        font-size: 18px;
+    }
+    .head{
+        font-size: 22px;
+    }
+    .Faq{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .questionStyle{
+        font-size: 13px;
+    }
+    .answer{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:350px){
+    .text{
+        font-size: 16px;
+    }
+
+    .Faq{
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .questionStyle{
+        font-size: 13px;
+    }
+    .answer{
+        font-size: 14px;
+    }
 }
