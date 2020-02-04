@@ -66,13 +66,15 @@ button.addEventListener('click', (e)=> {
             Name: name.value,
             RegistrationNo: regno.value,
             Number: number.value,
-            Email: email.value
+            Email: email.value,
+            eventName: "SolutionChallenge"
         };
         grecaptcha.ready(() =>{
             grecaptcha.execute("6Lf5ddUUAAAAAKIJ5kmvXFeoqZ-VFtKgSBzaUXTk", {action : '/'})
             .then((token) => {
                 var myHeaders = new Headers();
                 myHeaders.append("Content-Type", "application/json");
+                myHeaders.append('g-recaptcha-response', token);
             
                 var json = JSON.stringify(data);
             
