@@ -61,31 +61,37 @@ button.addEventListener('click', (e)=> {
     if(i==4)
     {
         number.classList.remove('inpError');
+
         const data = {
             Name: name.value,
             RegistrationNo: regno.value,
             Number: number.value,
             Email: email.value
         };
-    
-        var myHeaders = new Headers();
-        myHeaders.append("Content-Type", "application/json");
-    
-        var json = JSON.stringify(data);
-    
-        var requestOptions = {
-        method: 'POST',
-        headers: myHeaders,
-        body: json,
-        mode: 'cors'    
-        };
-    
-        fetch("https://dsc-eventsreg.herokuapp.com/api/v1/participants/register", requestOptions)
-        .then(response => response.text())
-        .then((result) => {console.log(result); 
-
-            form.reset()})
-        .catch((error) => {console.log('error', error);});         
+        grecaptcha.ready(() =>{
+            grecaptcha.execute("6Lf5ddUUAAAAAKIJ5kmvXFeoqZ-VFtKgSBzaUXTk", {action : '/'})
+            .then((token) => {
+                var myHeaders = new Headers();
+                myHeaders.append("Content-Type", "application/json");
+            
+                var json = JSON.stringify(data);
+            
+                var requestOptions = {
+                method: 'POST',
+                headers: myHeaders,
+                body: json,
+                mode: 'cors'    
+                };
+            
+                fetch("https://dsc-eventsreg.herokuapp.com/api/v1/participants/register", requestOptions)
+                .then(response => response.text())
+                .then((result) => {console.log(result); 
+        
+                    form.reset()})
+                .catch((error) => {console.log('error', error);}); 
+            })
+        })
+                
     }
 
 });
