@@ -63,11 +63,12 @@ button.addEventListener('click', (e)=> {
         number.classList.remove('inpError');
 
         const data = {
-            Name: name.value,
-            RegistrationNo: regno.value,
-            Number: number.value,
-            Email: email.value,
-            eventName: "SolutionChallenge"
+            name: name.value,
+            registrationNumber: regno.value,
+            phoneNumber: number.value,
+            emailAddress: email.value,
+            deviceID: '',
+            eventName: "SolutionsChallenge"
         };
         grecaptcha.ready(() =>{
             grecaptcha.execute("6Lf5ddUUAAAAAKIJ5kmvXFeoqZ-VFtKgSBzaUXTk", {action : '/'})
