@@ -128,9 +128,9 @@ input{
     position: relative;
 }
 
-i{
+/* i{
     padding-top: 10px;
-}
+} */
 
 .error{
     /* border: 2px solid #e74c3c; */
@@ -139,9 +139,9 @@ i{
     
 }
 
-i{
+/* i{
     color: #e74c3c;
-}
+} */
 
 .inpError{
     border: 2px solid #e74c3c;
