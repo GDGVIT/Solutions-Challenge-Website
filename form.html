@@ -7,6 +7,11 @@
 
     <!-- LINKS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- <script
+  		src="https://code.jquery.com/jquery-3.4.1.min.js"
+ 	 	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  		crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="form.css">
 
     <!-- TITLE -->
@@ -21,7 +26,7 @@
         </div>
 
         <div class="logo">
-            <img src="assets/white-dsc.png" alt="">
+            <img src="assets/DSC Logo/White Logo/Short Logo.svg" alt="">
         </div>
         
         <div class="main">
@@ -32,23 +37,41 @@
         <div class="mainForm">
             <div class="form">
                 <p class="signUp">Sign Up</p>
-    
-                <label for="name">Name:</label>
-                <input type="text" id="name" required autocomplete="off">
-                <label for="regNo">Registration Number:</label>
-                <input type="text" id="regNo" required autocomplete="off">
-                <label for="number">Mobile Number:</label>
-                <input type="text" id="number" required autocomplete="off">
-                <label for="email">Email ID:</label>
-                <input type="email" id="email" required autocomplete="off">
-
-                <input type="submit" value="Submit">
-                <br>
+                <form>
+                    <div class="formControl">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" autocomplete="off">
+                        <i class="fa fa-exclamation-circle error nameIcon"></i>
+                    </div>
+                    <div class="formControl">
+                        <label for="regNo">Registration Number:</label>
+                        <input type="text" id="regNo" autocomplete="off">
+                        <i class="fa fa-exclamation-circle error regIcon"></i>
+                    </div>
+                    <div class="formControl">
+                        <label for="number">Mobile Number:</label>
+                        <input type="text" id="number" required autocomplete="off">
+                        <i class="fa fa-exclamation-circle error numIcon"></i>
+                    </div>
+                    <div class="formControl">
+                        <label for="email">Email ID:</label>
+                        <input type="email" id="email" required autocomplete="off">
+                        <i class="fa fa-exclamation-circle error mailIcon"></i>
+                    </div>
+                    
+                    
+                    
+                    
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+                
+                <!-- <br> -->
                 <a href="faq.html" class="faq">Freqently asked questions</a>
 
             </div>
         </div>
         
+        <script defer src="form.js"></script>
     </section>
 </body>
 </html>

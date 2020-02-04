@@ -33,6 +33,11 @@ body{
     padding-top: 70px;
 }
 
+.logo > img{
+    width: 300px;
+    height: auto;
+}
+
 .main{
     text-align: center;
 }
@@ -67,6 +72,7 @@ body{
     
     display: flex;
     justify-content: center;
+    /* position: relative; */
 }
 
 label{
@@ -89,9 +95,12 @@ input{
     outline: none;
     border: 2px solid #2784FB;
     border-radius: 5px;
+    /* position: relative; */
 }
 
-input[type=submit]{
+
+
+.submit{
     color: #FFFFFF;
     border: none;
     margin-top: 25px;
@@ -100,6 +109,7 @@ input[type=submit]{
     font-weight: 700;
     width: 30%;
     background-color: #3A39A5;
+    border-radius: 5px;
 }
 
 .faq{
@@ -115,7 +125,35 @@ input[type=submit]{
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-bottom: 200px;
+    position: relative;
 }
+
+i{
+    padding-top: 10px;
+}
+
+.error{
+    /* border: 2px solid #e74c3c; */
+    /* visibility: visible; */
+    visibility: hidden;
+    
+}
+
+i{
+    color: #e74c3c;
+}
+
+.inpError{
+    border: 2px solid #e74c3c;
+}
+
+/* .form i{
+    position: absolute;
+    right: 20px;
+    /* visibility: hidden;
+    display: none;
+    
+} */
 
 @media (max-width: 1050px){
     .img > .web{
@@ -149,10 +187,11 @@ input[type=submit]{
         height: 40px;
     }
 
-    input[type=submit]{
+    .submit{
         margin-top: 50px;
         height: 50px;
         font-size: 18px;
+        border-radius: 5px;
     }
 
     .signUp{
@@ -192,10 +231,11 @@ input[type=submit]{
         height: 30px;
     }
 
-    input[type=submit]{
+    .submit{
         height: 40px;
         font-size: 18px;
         margin-bottom: 40px;
+        border-radius: 5px;
     }
     .faq{
         font-size: 22px;
@@ -249,7 +289,7 @@ input[type=submit]{
         margin-left: 45px;
         font-size: 16px;
     }
-    input[type=submit]{
+    .submit{
         margin-bottom: 50px;
     }
 }
