@@ -5,6 +5,8 @@ const email = document.querySelector('#email');
 const regno = document.querySelector('#regNo');
 const name = document.querySelector('#name');
 const button = document.querySelector(".submit");
+const  loader = document.querySelector(".loader");
+const success = document.querySelector(".success");
 
 
 //FORM VALIDATION 
@@ -60,7 +62,11 @@ button.addEventListener('click', (e)=> {
 
     if(i==4)
     {
+        loader.style.display = "block";
         number.classList.remove('inpError');
+        name.classList.remove('inpError');
+        email.classList.remove('inpError');
+        regno.classList.remove('inpError');
 
         const data = {
             name: name.value,
@@ -87,7 +93,7 @@ button.addEventListener('click', (e)=> {
                 };
             
                 fetch("https://dsc-eventsreg.herokuapp.com/api/v1/participants/register", requestOptions)
-                .then(response => response.text())
+                .then(response => {response.text(); loader.style.display = "none"; success.style.display = "block";})
                 .then((result) => {console.log(result); 
         
                     form.reset()})

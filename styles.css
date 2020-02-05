@@ -53,7 +53,7 @@ body{
     font-size: 40px;
     font-weight: 700;
     color: #FFFFFF;
-    margin-top: 170px;
+    margin-top: 160px;
     margin-bottom: 20px;
 }
 
@@ -157,6 +157,10 @@ body{
         padding-right: 22px;
         padding-left: 22px;
         font-size: 16px;
+    }
+    .logo > img{
+        width: 150px;
+        height: auto;
     }
 }
 

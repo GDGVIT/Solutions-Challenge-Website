@@ -8,7 +8,7 @@ body{
     /* background-image: url(assets/faq.png);
     background-size: cover;
     background-repeat: no-repeat; */
-    height: 170vh;
+    height: 140vh;
     
 }
 
@@ -34,11 +34,11 @@ body{
     /* max-width: 100vw; */
     text-align: center;
     /* margin-top: 5px; */
-    padding-top: 75px;
+    padding-top: 40px;
 }
 
 .logo > img{
-    width: 300px;
+    width: 140px;
     height: auto;
 }
 
@@ -49,17 +49,18 @@ body{
 .head{
     /* text-align: center; */
     display: inline-block;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     color: #FFFFFF;
-    margin-top: 40px;
-    margin-bottom: 70px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .text{
     font-size: 25px;
     color: #2726A7;
     font-weight: 700;
+    margin-top: 10px;
 }
 
 button{
@@ -87,9 +88,10 @@ button{
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
-    width: 620px;
+    width: 1000px;
     border-radius: 10px;
-    padding: 50px;
+    padding: 30px;
+    margin-bottom: 40px;
 }
 
 i{
@@ -115,14 +117,16 @@ i{
 	font-weight: normal;
     font-size: 18px;
     color: #2726A7;
+    cursor: pointer;
 }
 
 .answer{
-	padding-top: 10px;
+	padding-top: 8px;
 	padding-left: 1rem;
 	font-weight: 300;
     font-size: 19px;
     color: rgba(0, 0, 0, 0.5);
+    /* margin-top: 5px; */
 }
 
 ::-webkit-scrollbar{
@@ -131,6 +135,10 @@ i{
 
 ::-webkit-scrollbar-thumb{
     background: #3A39A5;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #3E8AFC;
 }
 
 @media (max-width:1050px){
@@ -144,7 +152,7 @@ i{
         height: 65vh;
     }
     body{
-        height: 130vh;
+        height: 100vh;
     }
     .head{
         font-size: 50px;
@@ -153,6 +161,7 @@ i{
         /* margin-bottom: 50px; */
         margin-left: 50px;
         margin-right: 50px;
+        width: 700px;
     }
     .questionStyle{
         font-size: 24px;
@@ -164,6 +173,11 @@ i{
         padding:20px;
         font-size: 17px;
         border-radius: 5px;
+    }
+
+    .logo > img{
+        width: 200px;
+        height: auto;
     }
 }
 
@@ -178,15 +192,16 @@ i{
         height: 70vh;
     }
     body{
-        height: 150vh;
+        height: 100vh;
     }
     .head{
-        font-size: 40px;
+        font-size: 38px;
     }
     .Faq{
         /* margin-bottom: 50px; */
         margin-left: 50px;
         margin-right: 50px;
+        width: 550px;
     }
     .questionStyle{
         font-size: 20px;
@@ -207,13 +222,13 @@ i{
         height: 90vh;
     }
     body{
-        height: 185vh;
+        height: 120vh;
     }
     .text{
         font-size: 18px;
     }
     .head{
-        font-size: 24px;
+        font-size: 26px;
     }
     .Faq{
         margin-bottom: 50px;
@@ -221,7 +236,7 @@ i{
         margin-right: 10px;
     }
     .questionStyle{
-        font-size: 13px;
+        font-size: 15px;
     }
     .answer{
         font-size: 14px;
@@ -230,6 +245,14 @@ i{
         padding:15px;
         font-size: 14px;
     }
+    .logo > img{
+        width: 150px;
+        height: auto;
+    }
+
+    .logo{
+        padding-top: 40px;
+    }
 }
 
 @media (max-width:400px){
@@ -237,7 +260,7 @@ i{
         font-size: 18px;
     }
     .head{
-        font-size: 22px;
+        font-size: 24px;
     }
     .Faq{
         padding-left: 20px;
@@ -247,7 +270,7 @@ i{
         margin-right: 10px;
     }
     body{
-        height: 190vh;
+        height: 120vh;
     }   
     .questionStyle{
         font-size: 13px;
@@ -267,11 +290,19 @@ i{
         width: 98vw;
         height: 100vh;
     }
+
+    .head{
+        font-size: 20px;
+    }
+
     .text{
-        font-size: 16px;
+        margin-top: 10px;
+        font-size: 17px;
     }
 
     .Faq{
+        padding-top: 30px;
+        padding-bottom: 30px;
         margin-bottom: 50px;
         margin-left: 10px;
         margin-right: 10px;
@@ -281,7 +312,7 @@ i{
     }
 
     body{
-        height: 215vh;
+        height: 120vh;
     }
     .answer{
         font-size: 12px;
