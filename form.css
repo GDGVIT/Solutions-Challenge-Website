@@ -7,7 +7,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat; */
     height: 100vh;
-    max-width: 100vw;
+    width: 100vw;
 }
 
 /* ######################## LOADER ######################## */
@@ -20,6 +20,7 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    border-radius: 5px;
     z-index: 10;
     display: none;
 
@@ -204,6 +205,20 @@ input{
     display: none;
     
 } */
+
+@media (max-width: 1200px)
+{
+    body{
+        height: 100vh;
+    }
+}
+
+@media (max-height: 700px)
+{
+    body{
+        height: fit-content;
+    }
+} 
 
 @media (max-width: 1050px){
     .img > .web{
