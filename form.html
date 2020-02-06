@@ -15,11 +15,13 @@
     <link rel="stylesheet" href="form.css">
 
     <!-- TITLE -->
-
-    <title>Solutions Challenge | DSC-VIT</title>
+        <link rel="shortcut icon" type="image/svg" href="assets/bulb-01.svg">
+    <title>  Register | Solutions Challenge</title>
 </head>
 <body>
     <section class="container">
+        <div class="loader"></div>
+        <div class="overlay"></div>
         <div class="img">
             <img src="assets/confetti web new.png" alt="" class="web">
             <img src="assets/confetti mobile.png" alt="" class="mob">
@@ -38,7 +40,7 @@
 
         <div class="mainForm">
             <div class="form">
-                <div class="loader"></div>
+                
                 <p class="signUp">Sign Up</p>
                 <!-- <div class="success">
                     <p class="successText">SUCCESS</p>
@@ -58,7 +60,7 @@
                     </div>
                     <div class="formControl">
                         <label for="number">Mobile Number:</label>
-                        <input type="text" id="number" required autocomplete="off">
+                        <input type="text" id="number" required autocomplete="off" maxlength="10">
                         <!-- <i class="fa fa-exclamation-circle error numIcon"></i> -->
                     </div>
                     <div class="formControl">
