@@ -110,6 +110,11 @@ button.addEventListener('click', (e)=> {
                 overlay.style.display = "none";
                 }); 
             })
+            .catch((error) => {
+                swal("Oops something went wrong!", "some error occurred!", "error");
+                loader.style.display = "none";
+                overlay.style.display = "none";
+            });
         })
                 
     }

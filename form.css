@@ -6,8 +6,13 @@ body{
     /* background-image: url(assets/reg.png);
     background-size: cover;
     background-repeat: no-repeat; */
-    height: 100vh;
+    height: auto;
     width: 100vw;
+    vertical-align: middle;
+}
+
+.yeet{
+    margin: auto auto;
 }
 
 .swal-button--confirm {
@@ -21,6 +26,11 @@ body{
 .container{
     position: relative;
     min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .overlay{
