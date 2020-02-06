@@ -7,11 +7,12 @@ const name = document.querySelector('#name');
 const button = document.querySelector(".submit");
 const  loader = document.querySelector(".loader");
 const success = document.querySelector(".success");
-
+const ok = document.querySelector('#ok');
 
 //FORM VALIDATION 
 
 button.addEventListener('click', (e)=> {
+    
      e.preventDefault();
     let i = 0;
     if(name.value == '')
@@ -93,7 +94,10 @@ button.addEventListener('click', (e)=> {
                 };
             
                 fetch("https://dsc-eventsreg.herokuapp.com/api/v1/participants/register", requestOptions)
-                .then(response => {response.text(); loader.style.display = "none"; success.style.display = "block";})
+                .then(response => {  response.text();
+                                     loader.style.display = "none";
+                                     swal("SUCCESS", "You're all set !", "success");
+                                    })
                 .then((result) => {console.log(result); 
         
                     form.reset()})
