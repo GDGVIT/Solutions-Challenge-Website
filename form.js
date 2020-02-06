@@ -8,6 +8,7 @@ const button = document.querySelector(".submit");
 const  loader = document.querySelector(".loader");
 const success = document.querySelector(".success");
 const ok = document.querySelector('#ok');
+const overlay = document.querySelector('.overlay');
 
 //FORM VALIDATION 
 
@@ -64,6 +65,7 @@ button.addEventListener('click', (e)=> {
     if(i==4)
     {
         loader.style.display = "block";
+        overlay.style.display = "block";
         number.classList.remove('inpError');
         name.classList.remove('inpError');
         email.classList.remove('inpError');
@@ -96,13 +98,23 @@ button.addEventListener('click', (e)=> {
                 fetch("https://dsc-eventsreg.herokuapp.com/api/v1/participants/register", requestOptions)
                 .then(response => {  response.text();
                                      loader.style.display = "none";
-                                     swal("SUCCESS", "You're all set !", "success");
+                                     overlay.style.display = "none";
+                                     swal("Success", "You're all set!", "success");
                                     })
                 .then((result) => {console.log(result); 
         
                     form.reset()})
-                .catch((error) => {console.log('error', error);}); 
+                .catch((error) => {console.log('error', error);
+                swal("Oops something went wrong!", "some error occurred!", "error");
+                loader.style.display = "none";
+                overlay.style.display = "none";
+                }); 
             })
+            .catch((error) => {
+                swal("Oops something went wrong!", "some error occurred!", "error");
+                loader.style.display = "none";
+                overlay.style.display = "none";
+            });
         })
                 
     }

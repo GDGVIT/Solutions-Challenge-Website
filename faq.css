@@ -8,7 +8,7 @@ body{
     /* background-image: url(assets/faq.png);
     background-size: cover;
     background-repeat: no-repeat; */
-    height: 140vh;
+    height: 120vh;
     
 }
 
@@ -228,7 +228,9 @@ i{
         font-size: 18px;
     }
     .head{
-        font-size: 26px;
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
     .Faq{
         margin-bottom: 50px;
@@ -260,7 +262,7 @@ i{
         font-size: 18px;
     }
     .head{
-        font-size: 24px;
+        font-size: 20px;
     }
     .Faq{
         padding-left: 20px;
@@ -292,7 +294,7 @@ i{
     }
 
     .head{
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .text{
@@ -316,5 +318,10 @@ i{
     }
     .answer{
         font-size: 12px;
+    }
+
+    .logo > img{
+        width: 120px;
+        height: auto;
     }
 }
