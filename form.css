@@ -349,7 +349,7 @@ input{
 @media (max-width: 500px){
     .head{
         font-size: 23px;
-        margin-top: 30px;
+        margin-top:20px;
     }
     .text{
         font-size: 16px;
@@ -362,12 +362,12 @@ input{
 
     .form{
         width:90vw;
-        margin-bottom: 70px;
-        height: 550px;
+        margin-bottom: 30px;
+        height: 500px;
     }
 
     label{
-        margin-top: 20px;
+        margin-top: 15px;
         margin-left: 30px;
         font-size: 15px;
     }
@@ -378,7 +378,7 @@ input{
     }
 
     .logo > img{
-        width: 200px;
+        width: 180px;
         height: auto;
     }
 
@@ -415,8 +415,8 @@ input{
 
     .form{
         width:90vw;
-        margin-bottom: 60px;
-        height: 500px;
+        margin-bottom: 30px;
+        height: 450px;
     }
     input{
         height: 25px;
@@ -438,17 +438,19 @@ input{
 @media (max-width:350px){
     .signUp{
         font-size: 22px;
-        margin: 15px;
+        margin: 10px;
+        margin-bottom: 5px;
     }
     .faq{
         font-size: 15px;
     }
     .head{
-        font-size: 20px;
+        font-size: 18px;
+        margin-top: 10px;
     }
     .text{
         font-size: 16px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .logo{
@@ -456,8 +458,8 @@ input{
     }
 
     .submit{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     input{
@@ -466,13 +468,18 @@ input{
 
     .form{
         width:90vw;
-        height: 480px;
-        margin-bottom: 50px;
+        height: 400px;
+        margin-bottom: 20px;
     }
 
     label{
         margin-left: 25px;
         font-size: 14px;
+    }
+
+    .logo > img{
+        width: 100px;
+        height: auto;
     }
 
     /* .overlay{
