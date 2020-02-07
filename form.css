@@ -2,13 +2,10 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     background-image: linear-gradient(225deg, #3499FF 0%, #3E8AFC 22%, #6454F0 100%);
-    /* background-color: #3499FF; */
-    /* background-image: url(assets/reg.png);
-    background-size: cover;
-    background-repeat: no-repeat; */
-    height: auto;
-    width: 100vw;
+    height: 100vh;
+    max-width: 98vw;
     vertical-align: middle;
+    /* overflow: hidden; */
 }
 
 .yeet{
@@ -27,10 +24,10 @@ body{
     position: relative;
     min-height: 100vh;
 
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 .overlay{
@@ -98,7 +95,7 @@ body{
 
 .img > .web{
     object-fit: contain;
-    width: 98vw;
+    max-width: 98vw;
     height: 98vh;
 }
 
@@ -124,7 +121,7 @@ body{
     font-size: 40px;
     font-weight: 700;
     color: #FFFFFF;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -205,31 +202,24 @@ input{
     position: relative;
 }
 
-/* i{
-    padding-top: 10px;
-} */
+
 
 .error{
-    /* border: 2px solid #e74c3c; */
-    /* visibility: visible; */
+    
     visibility: hidden;
     
 }
 
-/* i{
-    color: #e74c3c;
-} */
 
 .inpError{
     border: 2px solid #e74c3c;
 }
 
-/* .form i{
-    position: absolute;
-    right: 20px;
-    /* visibility: hidden;
-    display: none;
-    
+/* @media (min-width:1250px){
+    body{
+        overflow: hidden;
+        /* overflow-y: ; 
+    }
 } */
 
 @media (max-width: 1200px)
@@ -239,7 +229,7 @@ input{
     }
 }
 
-@media (max-height: 700px)
+@media (max-height: 800px)
 {
     body{
         height: fit-content;
@@ -349,7 +339,7 @@ input{
 @media (max-width: 500px){
     .head{
         font-size: 23px;
-        margin-top: 30px;
+        margin-top:20px;
     }
     .text{
         font-size: 16px;
@@ -362,12 +352,12 @@ input{
 
     .form{
         width:90vw;
-        margin-bottom: 70px;
-        height: 550px;
+        margin-bottom: 30px;
+        height: 500px;
     }
 
     label{
-        margin-top: 20px;
+        margin-top: 15px;
         margin-left: 30px;
         font-size: 15px;
     }
@@ -378,7 +368,7 @@ input{
     }
 
     .logo > img{
-        width: 200px;
+        width: 180px;
         height: auto;
     }
 
@@ -415,8 +405,8 @@ input{
 
     .form{
         width:90vw;
-        margin-bottom: 60px;
-        height: 500px;
+        margin-bottom: 30px;
+        height: 450px;
     }
     input{
         height: 25px;
@@ -438,17 +428,19 @@ input{
 @media (max-width:350px){
     .signUp{
         font-size: 22px;
-        margin: 15px;
+        margin: 10px;
+        margin-bottom: 5px;
     }
     .faq{
         font-size: 15px;
     }
     .head{
-        font-size: 20px;
+        font-size: 18px;
+        margin-top: 10px;
     }
     .text{
         font-size: 16px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .logo{
@@ -456,8 +448,8 @@ input{
     }
 
     .submit{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     input{
@@ -466,13 +458,18 @@ input{
 
     .form{
         width:90vw;
-        height: 480px;
-        margin-bottom: 50px;
+        height: 400px;
+        margin-bottom: 20px;
     }
 
     label{
         margin-left: 25px;
         font-size: 14px;
+    }
+
+    .logo > img{
+        width: 100px;
+        height: auto;
     }
 
     /* .overlay{
